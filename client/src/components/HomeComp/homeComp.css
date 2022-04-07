@@ -48,6 +48,12 @@
     margin: 10px auto;
 }
 
+.line2 {
+    border-bottom: 1px solid rgb(0, 0, 0);
+    width: 75%;
+    margin: 10px auto;
+}
+
 .our-services-title {
     text-align: center;
     font-weight: 600;
@@ -87,7 +93,17 @@
 .servicing-img {
     width: 100%;
     max-width: 600px;
-    
+
+}
+
+.axad-form {
+    text-align: center;
+    width: 100%;
+}
+
+.axad-form-title {
+    font-size: 50px;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 1000px) {

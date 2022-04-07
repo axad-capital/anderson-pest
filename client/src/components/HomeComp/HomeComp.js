@@ -81,6 +81,15 @@ const HomeComp = () => {
                     <img className='servicing-img' src={KillBugs} alt="bug spray" />
                 </div>
             </div>
+
+            <div className='axad-form'>
+                <h1 className='axad-form-title'>- Free Listing -</h1>
+                <div className="line2"></div>
+                <br />
+                <iframe title='form' src="https://forms.monday.com/forms/embed/b046ae4b7e6c1329190c7614ce28b296?r=use1" width="80%" height="1800" style={{ maxWidth: '1000px', border: '0', boxShadow: '5px 5px 56px 0px rgba(0,0,0,0.25)' }}></iframe>
+            </div>
+            <br />
+            <br />
         </div>
     )
 }

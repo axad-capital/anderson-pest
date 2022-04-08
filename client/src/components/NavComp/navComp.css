@@ -6,3 +6,11 @@
     color: rgb(45, 113, 168) !important;
     font-weight: 700;
 } */
+
+#nav-number {
+    font-size: 30px;
+}
+
+.call-us-nav {
+    color: rgb(79, 120, 255);
+}

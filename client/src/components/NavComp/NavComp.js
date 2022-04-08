@@ -17,14 +17,14 @@ const NavComp = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav">
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <Link to='/' className={location.pathname === '/' ? 'nav-link active' : 'nav-link'}>Home</Link>
                             </li>      
                             <li className="nav-item">
                                 <a href='#our-services' className={location.pathname === '/' ? 'nav-link active' : 'nav-link'}>Our Services</a>
-                            </li>
+                            </li> */}
                             <li className="nav-item">
-                                <a href='tel:555-555-5555' className={location.pathname === '/' ? 'nav-link active' : 'nav-link'}>Call Us</a>
+                                <a id='nav-number' href='tel:555-555-5555' className={location.pathname === '/' ? 'nav-link active' : 'nav-link'}><span className='call-us-nav'>Call Us Now For A Free Quote</span> : 555-555-5555</a>
                             </li>                    
                         </ul>
                     </div>

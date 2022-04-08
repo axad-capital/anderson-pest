@@ -96,7 +96,7 @@
 
 }
 
-.axad-form {
+/* .axad-form {
     text-align: center;
     width: 100%;
 }
@@ -104,6 +104,44 @@
 .axad-form-title {
     font-size: 50px;
     font-weight: 600;
+} */
+
+.pest-form-title {
+    text-align: center;
+}
+
+.pest-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 500px;
+    gap: 10px;
+    padding: 30px;
+    min-width: 290px;
+    margin: 0 auto;
+}
+
+.pest-form-inputs {
+    padding: 12px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.form-btn {
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: rgb(80, 126, 194);
+    color: white;
+    font-weight: 600;
+}
+
+.form-btn:hover {
+    background-color: rgb(64, 64, 233);
+}
+
+.line {
+    border-bottom: 1px solid black;
 }
 
 @media screen and (max-width: 1000px) {

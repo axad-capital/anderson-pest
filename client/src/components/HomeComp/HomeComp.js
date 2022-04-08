@@ -10,6 +10,16 @@ import Tick from './tick.png';
 import KillBugs from './kill-bugs.jpg';
 
 const HomeComp = () => {
+
+    function handleFormSubmit() {
+        let firstName = document.getElementById('first').value
+        let lastName = document.getElementById('last').value
+        let phone = document.getElementById('phone').value
+        let email = document.getElementById('email').value
+        let zip = document.getElementById('zip').value
+        console.log(firstName, lastName, phone, email, zip);
+    }
+
     return (
         <div>
             <div className="header">
@@ -82,11 +92,31 @@ const HomeComp = () => {
                 </div>
             </div>
 
-            <div className='axad-form'>
+            {/* <div className='axad-form'>
                 <h1 className='axad-form-title'>- Free Listing -</h1>
                 <div className="line2"></div>
                 <br />
                 <iframe title='form' src="https://forms.monday.com/forms/embed/b046ae4b7e6c1329190c7614ce28b296?r=use1" width="80%" height="1800" style={{ maxWidth: '1000px', border: '0', boxShadow: '5px 5px 56px 0px rgba(0,0,0,0.25)' }}></iframe>
+            </div> */}
+            <div className='pest-form'>
+                <h2 className='pest-form-title'>Get An Estimate</h2>
+                <div className='line'></div>
+                <label htmlFor="first">First Name</label>
+                <input className='pest-form-inputs' type="text" name="first" id="first" placeholder='First Name' />
+
+                <label htmlFor="last">Last Name</label>
+                <input className='pest-form-inputs' type="text" name="last" id="last" placeholder='Last Name' />
+
+                <label htmlFor="phone">Phone Number</label>
+                <input className='pest-form-inputs' type="number" name="phone" id="phone" placeholder='Phone Number' />
+
+                <label htmlFor="email">Email Address</label>
+                <input className='pest-form-inputs' type="email" name="email" id="email" placeholder='Email Address' />
+
+                <label htmlFor="zip">Zipcode</label>
+                <input className='pest-form-inputs' type="number" name="zip" id="zip" placeholder='Zipcode' />
+                <br />
+                <button className='form-btn' onClick={handleFormSubmit}>Submit</button>
             </div>
             <br />
             <br />

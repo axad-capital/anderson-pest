@@ -60,6 +60,10 @@
     font-size: 50px;
 }
 
+.our-services-subtitle {
+    text-align: center;
+}
+
 .services-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -68,7 +72,7 @@
 }
 
 .services {
-    background-color: rgb(241, 245, 248);
+    background-color: rgb(255, 255, 255);
     text-align: center;
     border-radius: 10px;
     border: 1px solid rgb(195, 205, 212);
@@ -76,7 +80,7 @@
 
 .service-img {
     width: 100%;
-    max-width: 400px;
+    max-width: 200px;
 }
 
 .services h5 {
@@ -144,6 +148,38 @@
     border-bottom: 1px solid black;
 }
 
+.pest-man-bg {
+    background-image: url('./background-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+}
+
+.pest-man-container {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    max-width: 1200px;
+    gap: 30px;
+    margin: 50px auto;
+}
+
+.pest-man-img-container {
+    width: 50%;;
+}
+
+.pest-man {
+    width: 100%;
+}
+
+.pest-man-info {
+    width: 50%;
+}
+
+.pest-man-info h4 {
+    font-weight: 600;
+}
+
 @media screen and (max-width: 1000px) {
     .header {
         display: block;
@@ -164,6 +200,22 @@
 
     .services-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pest-man-container {
+        display: block;
+        text-align: center;
+        width: 90%;
+    }
+
+    .pest-man-img-container {
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .pest-man-info {
+        margin: 20px auto;
+        width: 90%;
     }
 
 }

@@ -24,7 +24,7 @@ const NavComp = () => {
                                 <a href='#our-services' className={location.pathname === '/' ? 'nav-link active' : 'nav-link'}>Our Services</a>
                             </li> */}
                             <li className="nav-item">
-                                <a id='nav-number' href='tel:555-555-5555' className={location.pathname === '/' ? 'nav-link active' : 'nav-link'}><span className='call-us-nav'>Call For A Free Quote</span> : 555-555-5555</a>
+                                <a id='nav-number' href='tel:(877) 412-0488' className={location.pathname === '/' ? 'nav-link active' : 'nav-link'}><span className='call-us-nav'>Call For A Free Quote</span> : (877) 412-0488</a>
                             </li>                    
                         </ul>
                     </div>

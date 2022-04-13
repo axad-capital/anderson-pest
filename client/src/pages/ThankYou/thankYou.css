@@ -1,0 +1,18 @@
+.thanks-container {
+    margin: 0 auto;
+    padding: 150px;
+    text-align: center;
+    background-image: url('./thanks-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.thanks-title {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 960px) {
+    .thanks-container {
+        padding: 50px;
+    }
+}

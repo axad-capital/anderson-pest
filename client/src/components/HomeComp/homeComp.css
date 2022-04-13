@@ -2,16 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 50px;
+    /* padding: 50px 50px 0 50px; */
 }
 
 .header-title {
-    font-size: 45px;
+    font-size: 75px;
     font-weight: 600;
 }
 
 .header-text {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .header-info {
@@ -32,10 +32,10 @@
 
 .phone {
     text-align: center;
-    margin: 50px 0 50px 0;
-    padding: 10px;
+    margin: 0px 0 50px 0;
+    padding: 50px;
     color: white;
-    background-color: black;
+    background-color: rgb(31, 31, 31);
 }
 
 .number {
@@ -180,6 +180,11 @@
     font-weight: 600;
 }
 
+.permission {
+    height: 200px;
+    overflow: scroll;
+}
+
 @media screen and (max-width: 1000px) {
     .header {
         display: block;
@@ -220,7 +225,25 @@
 
 }
 
+.call-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 991.5px) {
+    .call-mobile {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 600px) {
+    .header-title {
+        font-size: 40px;
+    }
+
+    .header-text {
+        font-size: 20px;
+    }
+
     .services-container {
         grid-template-columns: repeat(1, 1fr);
     }

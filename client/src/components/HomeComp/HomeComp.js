@@ -18,11 +18,16 @@ const HomeComp = () => {
         let email = document.getElementById('email').value
         let zip = document.getElementById('zip').value
         console.log(firstName, lastName, phone, email, zip);
+        window.location.href = '/thank-you'
     }
 
     return (
         <div>
             <div className="header">
+                <div className='call-mobile'>
+                    <h4>Call For a Quote</h4>
+                    <a href='tel:(877) 412-0488'><h2>(877) 412-0488</h2></a>
+                </div>
                 <div className='header-info'>
                     <h1 className='header-title'>Affordable And Reliable Pest Control Services</h1>
                     <br />
@@ -49,15 +54,16 @@ const HomeComp = () => {
                         <input className='pest-form-inputs' type="number" name="zip" id="zip" placeholder='Zipcode' />
                         <br />
                         <button className='form-btn' onClick={handleFormSubmit}>Submit</button>
+                        <p className='permission'>By clicking "Submit", I provide my express written consent via electronic signature authorizing Anderson Pest Control Pros and one or more pest control specialists, their agents and marketing partners to contact me  and other related products and services to the number and email address I provided (including any wireless number). I further expressly consent to receive telemarketing emails, calls, text messages, pre-recorded messages, and artificial voice messages via an autodialed phone system, even if my telephone number is a mobile number that is currently listed on any state, federal or corporate “Do Not Call” list. I understand that my consent is not a condition of purchase of any goods or services and that standard message and data rates may apply.</p>
                     </div>
                 </div>
             </div>
 
             <div className="phone">
                 <h1>Get A Free Estimate Now</h1>
-                <div className='line'></div>
+                {/* <div className='line'></div> */}
                 <h2>Call Our Toll Free Number</h2>
-                <a className='number' href='tel:555-555-5555'><h1>555-555-5555</h1></a>
+                <a className='number' href='tel:(877) 412-0488'><h1>(877) 412-0488</h1></a>
             </div>
             <br />
 
@@ -105,7 +111,7 @@ const HomeComp = () => {
                     <p>We'll come back between treatments with no additional  fees to you. This followup service is free. We guarantee we'll resolve your pest control problem. Your time and pest problems are our first priority. Once you request an inspection, we respect your busy schedule and will set up an appointment as fast as possible.</p>
                     <br />
                     <h3>Call Us Today</h3>
-                    <a href='tel:555-555-5555'><h1>555-555-5555</h1></a>
+                    <a href='tel:(877) 412-0488'><h1>(877) 412-0488</h1></a>
                     <br />
                 </div>
                 <br />

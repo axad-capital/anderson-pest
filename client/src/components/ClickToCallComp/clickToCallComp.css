@@ -1,0 +1,147 @@
+.ctc-container {
+    width: 80%;
+    display: flex;
+    margin: 50px auto;
+    align-items: center;
+}
+
+.ctc-title-container {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.ctc-title {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.phone-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.ctc-icon {
+    font-size: 50px !important;
+    color: green;
+}
+
+.phone-num {
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.ctc-img-container {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.ctc-img {
+    width: 80%;
+    min-width: 600px;
+}
+
+.under-text-container {
+    margin: 30px auto 0 auto;
+    text-align: center;
+    padding: 80px;
+    background-color: rgb(245, 255, 255);
+}
+
+.second-phone {
+    width: 80%;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper-foot {
+    text-align: center;
+    padding: 50px 0 50px 0;
+    background-image: url('./background-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.upper-foot-title {
+    font-size: 50px;
+}
+
+.foot-icon {
+    font-size: 50px !important;
+    margin: 15px;
+}
+
+.foot-icon-text {
+    font-size: 25px;
+}
+
+.pest-spraying-man-container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.pest-spraying-man {
+    width: 80%;
+    max-width: 500px;
+    margin: 0px auto;
+}
+
+@media screen and (max-width: 1180px) {
+    .ctc-container {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .ctc-title-container {
+        width: 80%;
+    }
+
+    .ctc-title {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .ctc-sub-title {
+        margin-bottom: 30px;
+    }
+
+    .phone-container {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .phone-num {
+        font-size: 35px;
+    }
+
+    .ctc-img-container {
+        width: 100%;
+    }
+
+    .ctc-img {
+        text-align: center;
+        margin: 10px auto;
+        min-width: 100%;
+    }
+
+    .upper-foot-title {
+        font-size: 40px;
+    }
+
+    .foot-icon-text {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    .phone-num {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}

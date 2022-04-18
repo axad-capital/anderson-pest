@@ -17,7 +17,7 @@ const ClickToCallComp = () => {
                     <p className='ctc-sub-title'>Having issues with pest crawling all over your home?  Frightened or scared that you or your family would be harmed? Call to get a Free Consultation on getting rid of these little critters lying around your house</p>
                     <div className='phone-container'>
                         <PhoneIcon className='ctc-icon' />
-                        <a className='phone-num' href="tel:8774120488">(877)-412-0488</a>
+                        <a className='phone-num' href="tel:8556971105">(855) 697-1105</a>
                     </div>
                 </div>
                 <div className='ctc-img-container'>
@@ -62,7 +62,7 @@ const ClickToCallComp = () => {
             <br />
             <div className="second-phone">
                 <PhoneIcon className='ctc-icon' />
-                <a className='phone-num' href="tel:8774120488">(877)-412-0488</a>
+                <a className='phone-num' href="tel:8556971105">(855) 697-1105</a>
             </div>
 
         </div>

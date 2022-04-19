@@ -21,43 +21,60 @@ const HomeComp = () => {
         console.log(firstName, lastName, phone, address, email, zip);
         // window.location.href = '/thank-you'
 
-        let pestFormData = {
-            "promise": "W_YJX3Z",
-            "apid": "89B62A6801984C32AC644C0B0DC37A27",
-            "apiPassword": "dfc39798",
-            "productId": 44,
-            "fistName": firstName,
-            "lastName": lastName,
-            "address": address,
-            "zip": zip,
-            "email": email,
-            "cellPhone": phone,
-            "jobType": "roofing"
-        }
+        // let pestFormData = {
+        //     "promise": "W_YJX3Z",
+        //     "apiId": "89B62A6801984C32AC644C0B0DC37A27",
+        //     "apiPassword": "dfc39798",
+        //     "productId": 44,
+        //     "firstName": firstName,
+        //     "lastName": lastName,
+        //     "address": address,
+        //     "zip": zip,
+        //     "email": email,
+        //     "cellPhone": phone,
+        //     "jobType": "roofing"
+        // }
+
+        // let pestFormData = {
+        //     "apiId": "89B62A6801984C32AC644C0B0DC37A27",
+        //     "apiPassword": "dfc39798",
+        //     "testMode": 1,
+        //     "productId": 44,
+        //     "price": 0.0,
+        //     "firstName": "test",
+        //     "lastName": "test",
+        //     "address": "111 test drive",
+        //     "zip": "07755",
+        //     "email": "test@yahoo.com",
+        //     "cellPhone": "7321115555",
+        //     "jobType": "roofing"
+        // }
+
 
         fetch('https://leads-inst227-client.phonexa.com/fullpost/', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify(pestFormData)
-            // body: {
-            //     "promise": "W_YJX3Z",
-            //     "apid": "89B62A6801984C32AC644C0B0DC37A27",
-            //     "apiPassword": "dfc39798",
-            //     "productId": 44,
-            //     "fistName": firstName,
-            //     "lastName": lastName,
-            //     "address": address,
-            //     "zip": zip,
-            //     "email": email,
-            //     "cellPhone": phone,
-            //     "jobType": "roofing"
-            // }
+            // body: JSON.stringify(pestFormData)
+            body: {
+                "apiId": "89B62A6801984C32AC644C0B0DC37A27",
+                "apiPassword": "dfc39798",
+                "testMode": 1,
+                "productId": 44,
+                "price": 0.0,
+                "firstName": "test",
+                "lastName": "test",
+                "address": "111 test drive",
+                "zip": "07755",
+                "email": "test@yahoo.com",
+                "cellPhone": "7321115555",
+                "jobType": "roofing"
+            }
         })
             .then(res => {
                 // return res.json()
-                return console.log("note: succesful post")
+                return console.log({ note: "successful post" })
             })
         // .then(data => {
         //     console.log(data)

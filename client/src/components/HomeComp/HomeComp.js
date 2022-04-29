@@ -1,13 +1,14 @@
 import React from 'react';
 import './homeComp.css';
 // import PestHeader from './pest-header.jpg';
-import CarpAnt from './ant.jpg';
-import Fly from './fly.jpg'
-import Mouse from './rat.jpg';
-import Bird from './bird.jpg';
-import BedBug from './bedbug.jpg';
-import Tick from './tick.jpg';
+// import CarpAnt from './ant.jpg';
+// import Fly from './fly.jpg'
+// import Mouse from './rat.jpg';
+// import Bird from './bird.jpg';
+// import BedBug from './bedbug.jpg';
+// import Tick from './tick.jpg';
 import Pest from '../NavComp/pest.png'
+import Logo from './Logo.jpg'
 
 const HomeComp = () => {
 
@@ -83,6 +84,13 @@ const HomeComp = () => {
 
     return (
         <div>
+            <div className="pest-nav">
+                <img className='pest-logo' src={Logo} alt="logo" />
+                <div className='call-container'>
+                    <p className='nav-call'>Call For A Free Quote : </p>
+                    <a className='nav-phone' href="tel:8556971105">(855) 697-1105</a>
+                </div>
+            </div>
             <div className="header">
                 <div className='call-mobile'>
                     <h4>Call For a Quote</h4>
@@ -100,23 +108,24 @@ const HomeComp = () => {
                         <div className='line'></div>
                         <label htmlFor="first">First Name</label>
                         <input className='pest-form-inputs' type="text" name="first" id="first" placeholder='First Name' />
-
+                        <br />
                         <label htmlFor="last">Last Name</label>
                         <input className='pest-form-inputs' type="text" name="last" id="last" placeholder='Last Name' />
-
+                        <br />
                         <label htmlFor="phone">Phone Number</label>
                         <input className='pest-form-inputs' type="number" name="phone" id="phone" placeholder='Phone Number' />
-
+                        <br />
                         <label htmlFor="address">Street Address</label>
                         <input className='pest-form-inputs' type="text" name="address" id="address" placeholder='Street Address' />
-
+                        <br />
                         <label htmlFor="email">Email Address</label>
                         <input className='pest-form-inputs' type="email" name="email" id="email" placeholder='Email Address' />
-
+                        <br />
                         <label htmlFor="zip">Zipcode</label>
                         <input className='pest-form-inputs' type="number" name="zip" id="zip" placeholder='Zipcode' />
                         <br />
                         <button className='form-btn' onClick={handleFormSubmit}>Submit</button>
+                        <br />
                         <p className='permission'>By clicking "Submit", I provide my express written consent via electronic signature authorizing Anderson Pest Control Pros and one or more pest control specialists, their agents and marketing partners to contact me  and other related products and services to the number and email address I provided (including any wireless number). I further expressly consent to receive telemarketing emails, calls, text messages, pre-recorded messages, and artificial voice messages via an autodialed phone system, even if my telephone number is a mobile number that is currently listed on any state, federal or corporate “Do Not Call” list. I understand that my consent is not a condition of purchase of any goods or services and that standard message and data rates may apply.</p>
                     </div>
                 </div>
@@ -137,32 +146,32 @@ const HomeComp = () => {
                     <div className='services'>
                         <br />
                         <h5>Wood Destroying Insects</h5>
-                        <img className='service-img' src={CarpAnt} alt=" carp ant" />
+                        {/* <img className='service-img' src={CarpAnt} alt=" carp ant" /> */}
                     </div>
                     <div className='services'>
                         <br />
                         <h5>Common Household Pests</h5>
-                        <img className='service-img' src={Fly} alt="ants" />
+                        {/* <img className='service-img' src={Fly} alt="ants" /> */}
                     </div>
                     <div className='services'>
                         <br />
                         <h5>Rodents and Animal Control</h5>
-                        <img className='service-img' src={Mouse} alt="mouse" />
+                        {/* <img className='service-img' src={Mouse} alt="mouse" /> */}
                     </div>
                     <div className='services'>
                         <br />
                         <h5>Birds and Bats</h5>
-                        <img className='service-img' src={Bird} alt="bird" />
+                        {/* <img className='service-img' src={Bird} alt="bird" /> */}
                     </div>
                     <div className='services'>
                         <br />
                         <h5>Bed Bugs</h5>
-                        <img className='service-img' src={BedBug} alt="bed bug" />
+                        {/* <img className='service-img' src={BedBug} alt="bed bug" /> */}
                     </div>
                     <div className='services'>
                         <br />
                         <h5>Fleas and Ticks</h5>
-                        <img className='service-img' src={Tick} alt="tick" />
+                        {/* <img className='service-img' src={Tick} alt="tick" /> */}
                     </div>
                 </div>
             </div>

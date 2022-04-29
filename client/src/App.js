@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
-import NavComp from './components/NavComp/NavComp';
+// import NavComp from './components/NavComp/NavComp';
 import Footer from './components/Footer/Footer'
 import PrivacyPolicy from './pages/Legal/PrivacyPolicy';
 import Terms from './pages/Legal/Terms';
@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
        <Router>
-         <NavComp />
+         {/* <NavComp /> */}
         <Routes>
           <Route exact path='/' element={<HomePage />} />
           <Route exact path='/privacy-policy' element={<PrivacyPolicy />} />

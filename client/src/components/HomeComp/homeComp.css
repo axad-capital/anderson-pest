@@ -1,8 +1,44 @@
+.pest-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.pest-logo {
+    width: 150px;
+}
+
+.call-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-call {
+    font-weight: 600;
+    font-size: 25px;
+    margin: 0;
+}
+
+.nav-phone {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+
 .header {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     /* padding: 50px 50px 0 50px; */
+    background-image: url('./form-BG.jpg');
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
 }
 
 .header-title {
@@ -14,9 +50,14 @@
     font-size: 25px;
 }
 
+.pest-form > label {
+    font-weight: 600;
+}
+
 .header-info {
-    width: 40%;
-    max-width: 600px;
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
 }
 
 .header-img-container {
@@ -78,14 +119,15 @@
     border: 1px solid rgb(195, 205, 212);
 }
 
-.service-img {
+/* .service-img {
     width: 100%;
     max-width: 200px;
-}
+} */
 
 .services h5 {
     font-weight: 600;
     color: rgb(90, 90, 90);
+    padding-bottom: 10px;
 }
 
 .servicing-container {
@@ -115,14 +157,16 @@
 }
 
 .pest-form {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     width: 80%;
     max-width: 500px;
     gap: 10px;
     padding: 30px;
     min-width: 290px;
-    margin: 0 auto;
+    margin: 0 auto; */
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
 }
 
 .pest-form-inputs {
@@ -142,10 +186,6 @@
 
 .form-btn:hover {
     background-color: rgb(64, 64, 233);
-}
-
-.line {
-    border-bottom: 1px solid black;
 }
 
 .pest-man-bg {
@@ -182,7 +222,7 @@
 
 .permission {
     height: 200px;
-    overflow: scroll;
+    font-size: 12px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -246,5 +286,21 @@
 
     .services-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .permission {
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width: 650px ) {
+    .nav-call {
+       font-size: 12px;
+    }
+
+    .call-container {
+        display: block;
     }
 }

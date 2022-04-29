@@ -80,25 +80,21 @@ const HomeComp = () => {
             <div className="pest-nav">
                 <div>
                     <img className='pest-logo' src={Logo} alt="logo" />
-                    <p className='logo-name'>Anderson Pest Pros</p>
+                    <p className='logo-name'>PEST PROS</p>
                 </div>
                 <div className='call-container'>
                     <p className='nav-call'>Call For A Free Quote : </p>
                     <a className='nav-phone' href="tel:8556971105">(855) 697-1105</a>
                 </div>
             </div>
-            <div id='header' className="header">
-                <div className='call-mobile'>
-                    <h4>Call For a Quote</h4>
-                    <a href='tel:8556971105'><h2>(855) 697-1105</h2></a>
-                </div>
+            <div className="header">
                 <div className='header-info'>
                     <h1 className='header-title'>Affordable And Reliable Pest Control Services</h1>
                     <br />
                     <p className='header-text'>For more than 90 years, we've protected what's most valuable to you, with local specialists who go above and beyond to fix your problem and services designed to make your life easier, 365 days a year.</p>
                 </div>
                 <div className='header-img-container'>
-                    <div className='pest-form'>
+                    <div id='header' className='pest-form'>
                         <h2 className='pest-form-title'>Get An Estimate</h2>
                         <div className='line'></div>
                         <div className="form-inputs-container">

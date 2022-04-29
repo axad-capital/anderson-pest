@@ -1,12 +1,5 @@
 import React from 'react';
 import './homeComp.css';
-// import PestHeader from './pest-header.jpg';
-// import CarpAnt from './ant.jpg';
-// import Fly from './fly.jpg'
-// import Mouse from './rat.jpg';
-// import Bird from './bird.jpg';
-// import BedBug from './bedbug.jpg';
-// import Tick from './tick.jpg';
 import Pest from '../NavComp/pest.png'
 import Logo from './Logo.jpg'
 
@@ -85,13 +78,16 @@ const HomeComp = () => {
     return (
         <div>
             <div className="pest-nav">
-                <img className='pest-logo' src={Logo} alt="logo" />
+                <div>
+                    <img className='pest-logo' src={Logo} alt="logo" />
+                    <p className='logo-name'>Anderson Pest Pros</p>
+                </div>
                 <div className='call-container'>
                     <p className='nav-call'>Call For A Free Quote : </p>
                     <a className='nav-phone' href="tel:8556971105">(855) 697-1105</a>
                 </div>
             </div>
-            <div className="header">
+            <div id='header' className="header">
                 <div className='call-mobile'>
                     <h4>Call For a Quote</h4>
                     <a href='tel:8556971105'><h2>(855) 697-1105</h2></a>
@@ -102,27 +98,40 @@ const HomeComp = () => {
                     <p className='header-text'>For more than 90 years, we've protected what's most valuable to you, with local specialists who go above and beyond to fix your problem and services designed to make your life easier, 365 days a year.</p>
                 </div>
                 <div className='header-img-container'>
-                    {/* <img className='header-img' src={PestHeader} alt="pest header" /> */}
                     <div className='pest-form'>
                         <h2 className='pest-form-title'>Get An Estimate</h2>
                         <div className='line'></div>
-                        <label htmlFor="first">First Name</label>
-                        <input className='pest-form-inputs' type="text" name="first" id="first" placeholder='First Name' />
-                        <br />
-                        <label htmlFor="last">Last Name</label>
-                        <input className='pest-form-inputs' type="text" name="last" id="last" placeholder='Last Name' />
-                        <br />
-                        <label htmlFor="phone">Phone Number</label>
-                        <input className='pest-form-inputs' type="number" name="phone" id="phone" placeholder='Phone Number' />
-                        <br />
-                        <label htmlFor="address">Street Address</label>
-                        <input className='pest-form-inputs' type="text" name="address" id="address" placeholder='Street Address' />
-                        <br />
-                        <label htmlFor="email">Email Address</label>
-                        <input className='pest-form-inputs' type="email" name="email" id="email" placeholder='Email Address' />
-                        <br />
-                        <label htmlFor="zip">Zipcode</label>
-                        <input className='pest-form-inputs' type="number" name="zip" id="zip" placeholder='Zipcode' />
+                        <div className="form-inputs-container">
+                            <div>
+                                <label htmlFor="first">First Name</label>
+                                <input className='pest-form-inputs' type="text" name="first" id="first" placeholder='First Name' />
+                            </div>
+
+                            <div>
+                                <label htmlFor="last">Last Name</label>
+                                <input className='pest-form-inputs' type="text" name="last" id="last" placeholder='Last Name' />
+                            </div>
+
+                            <div>
+                                <label htmlFor="phone">Phone Number</label>
+                                <input className='pest-form-inputs' type="number" name="phone" id="phone" placeholder='Phone Number' />
+                            </div>
+
+                            <div>
+                                <label htmlFor="address">Street Address</label>
+                                <input className='pest-form-inputs' type="text" name="address" id="address" placeholder='Street Address' />
+                            </div>
+
+                            <div>
+                                <label htmlFor="email">Email Address</label>
+                                <input className='pest-form-inputs' type="email" name="email" id="email" placeholder='Email Address' />
+                            </div>
+
+                            <div>
+                                <label htmlFor="zip">Zipcode</label>
+                                <input className='pest-form-inputs' type="number" name="zip" id="zip" placeholder='Zipcode' />
+                            </div>
+                        </div>
                         <br />
                         <button className='form-btn' onClick={handleFormSubmit}>Submit</button>
                         <br />
@@ -146,32 +155,26 @@ const HomeComp = () => {
                     <div className='services'>
                         <br />
                         <h5>Wood Destroying Insects</h5>
-                        {/* <img className='service-img' src={CarpAnt} alt=" carp ant" /> */}
                     </div>
                     <div className='services'>
                         <br />
                         <h5>Common Household Pests</h5>
-                        {/* <img className='service-img' src={Fly} alt="ants" /> */}
                     </div>
                     <div className='services'>
                         <br />
                         <h5>Rodents and Animal Control</h5>
-                        {/* <img className='service-img' src={Mouse} alt="mouse" /> */}
                     </div>
                     <div className='services'>
                         <br />
                         <h5>Birds and Bats</h5>
-                        {/* <img className='service-img' src={Bird} alt="bird" /> */}
                     </div>
                     <div className='services'>
                         <br />
                         <h5>Bed Bugs</h5>
-                        {/* <img className='service-img' src={BedBug} alt="bed bug" /> */}
                     </div>
                     <div className='services'>
                         <br />
                         <h5>Fleas and Ticks</h5>
-                        {/* <img className='service-img' src={Tick} alt="tick" /> */}
                     </div>
                 </div>
             </div>
@@ -183,21 +186,11 @@ const HomeComp = () => {
                     <p>We'll come back between treatments with no additional  fees to you. This followup service is free. We guarantee we'll resolve your pest control problem. Your time and pest problems are our first priority. Once you request an inspection, we respect your busy schedule and will set up an appointment as fast as possible.</p>
                     <br />
                     <h3>Call Us Today</h3>
-                    <a href='tel:8556971105'><h1>(855) 697-1105</h1></a>
+                    <a className='number' href='tel:8556971105'><h1>(855) 697-1105</h1></a>
                     <br />
                 </div>
                 <br />
-                {/* <div>
-                    <img className='servicing-img' src='' alt="bug spray" />
-                </div> */}
             </div>
-
-            {/* <div className='axad-form'>
-                <h1 className='axad-form-title'>- Free Listing -</h1>
-                <div className="line2"></div>
-                <br />
-                <iframe title='form' src="https://forms.monday.com/forms/embed/b046ae4b7e6c1329190c7614ce28b296?r=use1" width="80%" height="1800" style={{ maxWidth: '1000px', border: '0', boxShadow: '5px 5px 56px 0px rgba(0,0,0,0.25)' }}></iframe>
-            </div> */}
 
             <div className='pest-man-bg'>
                 <div className='pest-man-container'>
@@ -207,6 +200,10 @@ const HomeComp = () => {
                     <div className='pest-man-info'>
                         <h4>Our experts will remove your pests for you! We fix several pest control nightmares - guaranteed - our expert team uses the most advanced high tech products on the market. Many of these products were invented in our own lab by staff members.</h4>
                     </div>
+                </div>
+                <div className="get-form-container">
+                    <h6>Get A Fast Quote Today!</h6>
+                    <button onClick={() => window.location.href = '#header'} className="get-form-btn">Get A Quote</button>
                 </div>
             </div>
         </div>

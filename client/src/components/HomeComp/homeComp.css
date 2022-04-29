@@ -9,6 +9,13 @@
     width: 150px;
 }
 
+.logo-name {
+    margin: 0;
+    font-weight: 800;
+    font-size: 10px;
+    text-align: center;
+}
+
 .call-container {
     display: flex;
     gap: 20px;
@@ -18,7 +25,7 @@
 .nav-call {
     font-weight: 600;
     font-size: 25px;
-    margin: 0;
+    margin: 10px;
 }
 
 .nav-phone {
@@ -26,13 +33,16 @@
     color: black;
     font-weight: 600;
     font-size: 20px;
+    background-color: rgb(66, 255, 66);
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 20px;
 }
 
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding: 50px 50px 0 50px; */
     background-image: url('./form-BG.jpg');
     color: white;
     background-position: center;
@@ -81,6 +91,26 @@
 
 .number {
     color: white;
+    text-decoration: none;
+    
+}
+
+.number:hover {
+    color: white;
+}
+
+.number > h1:hover {
+    color: white;
+    font-weight: 800;
+}
+
+.number > h1 {
+    background-color: green;
+    width: max-content;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 50px;
 }
 
 .line {
@@ -119,11 +149,6 @@
     border: 1px solid rgb(195, 205, 212);
 }
 
-/* .service-img {
-    width: 100%;
-    max-width: 200px;
-} */
-
 .services h5 {
     font-weight: 600;
     color: rgb(90, 90, 90);
@@ -139,34 +164,20 @@
 .servicing-img {
     width: 100%;
     max-width: 600px;
-
 }
-
-/* .axad-form {
-    text-align: center;
-    width: 100%;
-}
-
-.axad-form-title {
-    font-size: 50px;
-    font-weight: 600;
-} */
 
 .pest-form-title {
     text-align: center;
 }
 
 .pest-form {
-    /* display: flex;
-    flex-direction: column;
-    width: 80%;
-    max-width: 500px;
-    gap: 10px;
-    padding: 30px;
-    min-width: 290px;
-    margin: 0 auto; */
     display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
+}
+
+.form-inputs-container {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    margin: 0 auto;
 }
 
 .pest-form-inputs {
@@ -182,6 +193,8 @@
     background-color: rgb(80, 126, 194);
     color: white;
     font-weight: 600;
+    width: 200px;
+    margin: 0 auto;
 }
 
 .form-btn:hover {
@@ -223,6 +236,28 @@
 .permission {
     height: 200px;
     font-size: 12px;
+}
+
+.get-form-container {
+    text-align: center;
+}
+
+.get-form-container > h6 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.get-form-btn {
+    padding: 20px;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.get-form-btn:hover {
+    background-color: rgb(0, 77, 0);
 }
 
 @media screen and (max-width: 1000px) {
@@ -275,6 +310,36 @@
     }
 }
 
+@media screen and (max-width: 700px) {
+    .form-inputs-container {
+        display: block;
+        text-align: right;
+    }
+
+    .form-inputs-container {
+        width: 100%;
+    }
+
+    .pest-form-inputs {
+        width: 100%;
+    }
+
+    .form-inputs-container div label {
+        text-align: left;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 670px ) {
+    .nav-call {
+       font-size: 12px;
+    }
+
+    .call-container {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .header-title {
         font-size: 40px;
@@ -295,12 +360,3 @@
     }
 }
 
-@media screen and (max-width: 650px ) {
-    .nav-call {
-       font-size: 12px;
-    }
-
-    .call-container {
-        display: block;
-    }
-}

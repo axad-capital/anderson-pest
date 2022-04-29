@@ -1,7 +1,7 @@
 import React from 'react';
 import './homeComp.css';
 import Pest from '../NavComp/pest.png'
-import Logo from './Logo.jpg'
+import Logo from './anderson-pest-Logo.JPG'
 
 const HomeComp = () => {
 
@@ -80,7 +80,6 @@ const HomeComp = () => {
             <div className="pest-nav">
                 <div>
                     <img className='pest-logo' src={Logo} alt="logo" />
-                    <p className='logo-name'>PEST PROS</p>
                 </div>
                 <div className='call-container'>
                     <p className='nav-call'>Call For A Free Quote : </p>

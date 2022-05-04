@@ -13,7 +13,7 @@ const HomeComp = () => {
         let email = document.getElementById('email').value
         let zip = document.getElementById('zip').value
         console.log(firstName, lastName, phone, address, email, zip);
-        // window.location.href = '/thank-you'
+        window.location.href = '/thank-you'
 
         // let pestFormData = {
         //     "promise": "W_YJX3Z",

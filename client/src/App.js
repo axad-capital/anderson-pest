@@ -17,6 +17,8 @@ function App() {
          {/* <NavComp /> */}
         <Routes>
           <Route exact path='/' element={<HomePage />} />
+          <Route exact path='/goog' element={<HomePage />} />
+          <Route exact path='/fb' element={<HomePage />} />
           <Route exact path='/privacy-policy' element={<PrivacyPolicy />} />
           <Route exact path='/terms' element={<Terms />} />
           <Route exact path='/disclaimer' element={<Disclaimer />} />

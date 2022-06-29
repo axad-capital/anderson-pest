@@ -16,7 +16,14 @@ const HomeComp = () => {
         let email = document.getElementById('email').value
         let zip = document.getElementById('zip').value
         console.log(firstName, lastName, phone, address, email, zip);
-        window.location.href = '/thank-you'
+
+        if (location.pathname.split('/')[1] === 'goog') {
+            window.location.href = '/thanks/goog'
+        } else if (location.pathname.split('/')[1] === 'fb') {
+            window.location.href = '/thanks/fb'
+        } else {
+            window.location.href = '/thank-you'
+        }
 
         // let pestFormData = {
         //     "promise": "W_YJX3Z",
@@ -86,8 +93,8 @@ const HomeComp = () => {
                 </div>
                 <div className='call-container'>
                     <p className='nav-call'>Call For A Free Quote : </p>
-                    {location.pathname === '/goog' ? <a className='nav-phone' href="tel:18556971105">1(855)697-1105</a> : location.pathname === '/fb' ? <a className='nav-phone' href="tel:18886500960">1(888)650-0960</a> : <a className='nav-phone' href="tel:8556971105">(855) 697-1105</a>}
-                    
+                    {location.pathname.split('/')[1] === 'goog' ? <a className='nav-phone' href="tel:18556971105">1(855)697-1105</a> : location.pathname.split('/')[1] === 'fb' ? <a className='nav-phone' href="tel:18886500960">1(888)650-0960</a> : <a className='nav-phone' href="tel:8556971105">(855) 697-1105</a>}
+
                 </div>
             </div>
             <div className="header">
@@ -143,7 +150,7 @@ const HomeComp = () => {
                 <h1>Get A Free Estimate Now</h1>
                 {/* <div className='line'></div> */}
                 <h2>Call Our Toll Free Number</h2>
-                {location.pathname === '/goog' ? <a className='number' href="tel:18556971105"><h1>1(855)697-1105</h1></a> : location.pathname === '/fb' ? <a className='number' href="tel:18886500960"><h1>1(888)650-0960</h1></a> : <a className='number' href="tel:8556971105"><h1>(855) 697-1105</h1></a>}
+                {location.pathname.split('/')[1] === 'goog' ? <a className='number' href="tel:18556971105"><h1>1(855)697-1105</h1></a> : location.pathname.split('/')[1] === 'fb' ? <a className='number' href="tel:18886500960"><h1>1(888)650-0960</h1></a> : <a className='number' href="tel:8556971105"><h1>(855) 697-1105</h1></a>}
             </div>
             <br />
 
@@ -185,7 +192,7 @@ const HomeComp = () => {
                     <p>We'll come back between treatments with no additional  fees to you. This followup service is free. We guarantee we'll resolve your pest control problem. Your time and pest problems are our first priority. Once you request an inspection, we respect your busy schedule and will set up an appointment as fast as possible.</p>
                     <br />
                     <h3>Call Us Today</h3>
-                    {location.pathname === '/goog' ? <a className='number' href="tel:18556971105"><h1>1(855)697-1105</h1></a> : location.pathname === '/fb' ? <a className='number' href="tel:18886500960"><h1>1(888)650-0960</h1></a> : <a className='number' href="tel:8556971105"><h1>(855) 697-1105</h1></a>}
+                    {location.pathname.split('/')[1] === 'goog' ? <a className='number' href="tel:18556971105"><h1>1(855)697-1105</h1></a> : location.pathname.split('/')[1] === 'fb' ? <a className='number' href="tel:18886500960"><h1>1(888)650-0960</h1></a> : <a className='number' href="tel:8556971105"><h1>(855) 697-1105</h1></a>}
                     <br />
                 </div>
                 <br />

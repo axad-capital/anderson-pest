@@ -9,6 +9,8 @@ import Disclaimer from './pages/Legal/Disclaimer';
 import Partners from './pages/Legal/Partners';
 import ThankYou from './pages/ThankYou/ThankYou';
 import ClickToCall from './pages/ClickToCall/ClickToCall';
+import ThanksGoog from './pages/ThankYou/ThanksGoog';
+import ThanksFb from './pages/ThankYou/ThanksFb';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           <Route exact path='/partners' element={<Partners />} />
           <Route exact path='/thank-you' element={<ThankYou />} />
           <Route exact path='/call-for-quote' element={<ClickToCall />} />
+          <Route exact path='/thanks/goog' element={<ThanksGoog />} />
+          <Route exact path='/thanks/fb' element={<ThanksFb />} />
         </Routes>
         <Footer />
       </Router>
